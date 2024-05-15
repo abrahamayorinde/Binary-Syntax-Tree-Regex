@@ -47,7 +47,7 @@ Truth tables for each node type are listed below.
 | FALSE        | FALSE        | FALSE        |
 | TRUE         | TRUE         | TRUE         |
 
-|AND/CONCAT(‘*’)| |||
+|AND/CONCAT| |||
 | :---          |    :----:    |          ---:|
 | Left Input    | RightInput   | Output       |
 | NULLOP        | NULLOP       | NULLOP       |
