@@ -33,11 +33,6 @@ After some consternation it should be apparent that the desired behavior (via ex
 
 Truth tables for each node type are listed below.
 
-| Month | Savings |
-| -------- | ------- |
-| January | $250 |
-| February | $80 |
-| March | $420 |
 
 | OR     | | |
 | ---         |    ----    |          ---|
@@ -52,8 +47,9 @@ Truth tables for each node type are listed below.
 | FALSE        | FALSE        | FALSE        |
 | TRUE         | TRUE         | TRUE         |
 
-|AND/CONCAT(‘*’)| 
-| :---          |    :----:    |          ---:|| Left Input    | RightInput   | Output       |
+|AND/CONCAT(‘*’)| |||
+| :---          |    :----:    |          ---:|
+| Left Input    | RightInput   | Output       |
 | NULLOP        | NULLOP       | NULLOP       |
 | NULLOP        | TRUE         | TRUE         |
 | TRUE          | NULLOP       | TRUE         |
