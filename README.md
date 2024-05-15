@@ -36,7 +36,7 @@ Truth tables for each node type are listed below.
 
 | OR     | | |
 | ---         |    ----    |          ---|
-| Left Input   | RightInput   | Output       |
+| Left Input   | Right Input   | Output       |
 | NULLOP       | NULLOP       | NULLOP       |
 | NULLOP       | TRUE         | TRUE         |
 | TRUE         | NULLOP       | TRUE         |
@@ -47,9 +47,9 @@ Truth tables for each node type are listed below.
 | FALSE        | FALSE        | FALSE        |
 | TRUE         | TRUE         | TRUE         |
 
-|CONCAT| |||
-| ---          |    ----    |          ---|
-| Left Input    | RightInput   | Output       |
+| CONCAT     | | |
+| ---         |    ----    |          ---|
+| Left Input   | Right Input   | Output       |
 | NULLOP        | NULLOP       | NULLOP       |
 | NULLOP        | TRUE         | TRUE         |
 | TRUE          | NULLOP       | TRUE         |
