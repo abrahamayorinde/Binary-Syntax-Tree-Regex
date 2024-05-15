@@ -39,7 +39,18 @@ Truth tables for each node type are listed below.
 | February | $80 |
 | March | $420 |
 
-| OR (‘|’)     | | ---         |    ----    |          ---|| Left Input   | RightInput   | Output       || NULLOP       | NULLOP       | NULLOP       || NULLOP       | TRUE         | TRUE         || TRUE         | NULLOP       | TRUE         || NULLOP       | FALSE        | NULLOP       || FALSE        | NULLOP       | NULLOP       || FALSE        | TRUE         | TRUE         || TRUE         | FALSE        | TRUE         || FALSE        | FALSE        | FALSE        || TRUE         | TRUE         | TRUE         |
+| OR (‘|’)     | 
+| ---         |    ----    |          ---|
+| Left Input   | RightInput   | Output       |
+| NULLOP       | NULLOP       | NULLOP       |
+| NULLOP       | TRUE         | TRUE         |
+| TRUE         | NULLOP       | TRUE         |
+| NULLOP       | FALSE        | NULLOP       |
+| FALSE        | NULLOP       | NULLOP       |
+| FALSE        | TRUE         | TRUE         |
+| TRUE         | FALSE        | TRUE         |
+| FALSE        | FALSE        | FALSE        |
+| TRUE         | TRUE         | TRUE         |
 
 |AND/CONCAT(‘*’)| 
 | :---          |    :----:    |          ---:|| Left Input    | RightInput   | Output       |
