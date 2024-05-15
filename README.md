@@ -40,7 +40,7 @@ Truth tables for each node type are listed below.
 | March | $420 |
 
 | OR (‘|’)     | 
-| :---         |    :----:    |          ---:|
+| ---         |    ----    |          ---|
 | Left Input   | RightInput   | Output       |
 | NULLOP       | NULLOP       | NULLOP       |
 | NULLOP       | TRUE         | TRUE         |
