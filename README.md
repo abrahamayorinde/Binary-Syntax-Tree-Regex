@@ -48,7 +48,7 @@ Truth tables for each node type are listed below.
 | TRUE         | TRUE         | TRUE         |
 
 |AND/CONCAT| |||
-| :---          |    :----:    |          ---:|
+| ---          |    ----    |          ---|
 | Left Input    | RightInput   | Output       |
 | NULLOP        | NULLOP       | NULLOP       |
 | NULLOP        | TRUE         | TRUE         |
@@ -62,7 +62,7 @@ Truth tables for each node type are listed below.
 
 
 |PLUS(‘+’)      |      
-| :---          |    :----:    |          
+| ---          |    ----    |          
 | Left Input    | Output       |              
 | NULLOP        | FALSE        |
 | TRUE          | TRUE         | 
@@ -70,7 +70,7 @@ Truth tables for each node type are listed below.
 
 
 |QUEST(‘?’)     | 
-| :---          |    :----:    |          
+| ---          |    ----    |          
 | Left Input    | Output       |              
 | NULLOP        | NULLOP       |
 | TRUE          | TRUE         | 
@@ -78,7 +78,7 @@ Truth tables for each node type are listed below.
 
 
 |KLEENE(‘*’)    | 
-| :---          |    :----:    |          
+| ---          |    ----    |          
 | Left Input    | Output       |              
 | NULLOP        | NULLOP       |
 | TRUE          | TRUE         | 
@@ -86,7 +86,7 @@ Truth tables for each node type are listed below.
 
 
 |LITERAL(lookup)|
-| :---          |    :----:    |          
+| ---          |    ----    |          
 | Left Input    | Output       |              
 | TRUE          | TRUE         |
 | FALSE         | FALSE        | 
