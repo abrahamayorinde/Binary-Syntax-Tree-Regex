@@ -62,7 +62,7 @@ Truth tables for each node type are listed below.
 
 
 | PLUS     | | |
-| ---         |    ----    |          ---|   
+| ---         |    ----    |  
 | Left Input    | Output       |              
 | NULLOP        | FALSE        |
 | TRUE          | TRUE         | 
