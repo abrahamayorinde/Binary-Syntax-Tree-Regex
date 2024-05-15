@@ -63,32 +63,31 @@ Truth tables for each node type are listed below.
 
 | PLUS     | |
 | ---         |    ----    |     
-| Left Input    | Output       |
 | Left Input    | Output       |              
 | NULLOP        | FALSE        |
 | TRUE          | TRUE         | 
 | FALSE         | FALSE        |
 
 
-|QUEST(‘?’)     | 
-| ---          |    ----    |          
+|QUEST(‘?’)  | |
+| ---         |    ----    |     
 | Left Input    | Output       |              
 | NULLOP        | NULLOP       |
 | TRUE          | TRUE         | 
 | FALSE         | NULLOP       |
 
 
-|KLEENE(‘*’)    | 
-| ---          |    ----    |          
+|KLEENE(‘*’)  | |
+| ---         |    ----    |     
 | Left Input    | Output       |              
 | NULLOP        | NULLOP       |
 | TRUE          | TRUE         | 
 | FALSE         | NULLOP       |
 
 
-|LITERAL(lookup)|
-| ---          |    ----    |          
-| Left Input    | Output       |              
+|LITERAL(lookup)| |
+| ---         |    ----    |     
+| Left Input    | Output       |            
 | TRUE          | TRUE         |
 | FALSE         | FALSE        | 
 
