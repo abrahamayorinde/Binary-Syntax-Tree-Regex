@@ -33,6 +33,12 @@ After some consternation it should be apparent that the desired behavior (via ex
 
 Truth tables for each node type are listed below.
 
+| Month | Savings |
+| -------- | ------- |
+| January | $250 |
+| February | $80 |
+| March | $420 |
+
 | OR (‘|’)     | 
 | :---         |    :----:    |          ---:|
 | Left Input   | RightInput   | Output       |
@@ -89,6 +95,8 @@ Truth tables for each node type are listed below.
 | Left Input    | Output       |              
 | TRUE          | TRUE         |
 | FALSE         | FALSE        | 
+
+
 
 
 Starting at the root node and recursively calling the operation will evaluate the stringpattern against the regex. 
