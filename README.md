@@ -32,7 +32,6 @@ Furthermore, since regex statements can be crafted in ways where any node can pr
 After some consternation it should be apparent that the desired behavior (via experiment/trial and error) can reveal a logical implementation of the operations.
 
 Truth tables for each node type are listed below.
-OR (‘|’)
 
 | OR (‘|’)     | 
 | :---         |    :----:    |          ---:|
