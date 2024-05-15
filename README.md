@@ -39,7 +39,7 @@ Truth tables for each node type are listed below.
 | February | $80 |
 | March | $420 |
 
-| OR (‘|’)     | 
+| OR (‘|’)     | | |
 | ---         |    ----    |          ---|
 | Left Input   | RightInput   | Output       |
 | NULLOP       | NULLOP       | NULLOP       |
