@@ -1,4 +1,4 @@
-An algorithm to do regex matching using the abstract syntax tree (in this case a binary syntax tree) as the graph (DFA or NFA) via recursive descent. [*The implementation of the algorithm at the github page provides a visualization to illustrate how the tree is parsed/created from the regexpattern.  It also illustrates, step-by-step, how the stringpattern is evaluated for a match.]
+An algorithm to do regex matching using the abstract syntax tree (in this case a binary syntax tree) as the graph (DFA or NFA) via recursive descent. [*The implementation of the algorithm at the github page provides a visualization to illustrate how the tree is parsed/created from the regexpattern.  It also illustrates, step-by-step, how the stringpattern is evaluated for a match. https://abrahamayorinde.github.io/Binary-Syntax-Tree-Regex/]
 
 The algorithm currently only supports basic regex, meaning that it does not implement character classes or backtracking. [*I will implement character classes, but backtracking is unlikely.]
 
