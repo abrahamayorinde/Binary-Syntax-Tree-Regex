@@ -774,13 +774,15 @@ var plus = function(index, syntaxNode)//one or more
     {
         answer = SUCCESS;
         animationstack.push(new animation_object(this.getthisx(), this.getthisy(), "green"));
-
+        /*
         if((local_index.index - last.index) >= offset)
         {
             offset = local_index.index - last.index;
+            */
             last.index = local_index.index;
+            /*
         }
-    
+             */
         action = syntaxNode.left.operation(local_index, syntaxNode.left);
     }
 
@@ -823,19 +825,29 @@ var kleene = function(index, syntaxNode)//zero or more
     animationstack.push(new animation_object(this.getthisx(), this.getthisy(), "yellow"));
     action = syntaxNode.left.operation(local_index, syntaxNode.left);
 
-    while((action == SUCCESS) && (local_index.index<=stringpatternlength))
+    if(action == SUCCESS)
+    {
+        while((action == SUCCESS) && (local_index.index<=stringpatternlength))
+        {
+            answer = SUCCESS;
+            animationstack.push(new animation_object(this.getthisx(), this.getthisy(), "green"));
+            /*
+            if((local_index.index - last.index) >= offset)
+            {
+                offset = local_index.index - last.index;
+             */
+                last.index = local_index.index;
+                /*
+            }
+            */
+            action = syntaxNode.left.operation(local_index, syntaxNode.left);
+        }
+    }
+    else
     {
         answer = SUCCESS;
-        animationstack.push(new animation_object(this.getthisx(), this.getthisy(), "green"));
-        if((local_index.index - last.index) >= offset)
-        {
-            offset = local_index.index - last.index;
-            last.index = local_index.index;
-        }
-    
-        action = syntaxNode.left.operation(local_index, syntaxNode.left);
+        index.index = local_index.index;
     }
-    
     index.index = last.index;
 
     return answer;
