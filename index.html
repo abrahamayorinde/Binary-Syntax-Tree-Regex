@@ -642,7 +642,7 @@ var evaluatestring = function(string, regexTree)
             animationstack.push(new animation_object(x_init, y_init, "red"));
             isthereamatch = false;
         }
-        if(answer == SUCCESS)
+        if(answer != FAIL)
         {
             animationstack.push(new animation_object(x_init, y_init, "green"));
             isthereamatch = true;
