@@ -94,6 +94,3 @@ Truth tables for each node type are listed below.
 Starting at the root node and recursively calling the operation will evaluate the stringpattern against the regex. 
 
 
-
-To resolve this a final check if the index has reached the length of the stringpattern will confirm whether all of the input stringpattern has been evaluated.  If it has, the return value from the operation function of the root node is valid.  If the index is less than the length of the stringpattern, return value is invalid and a full match was not found for the stringpattern.
-
