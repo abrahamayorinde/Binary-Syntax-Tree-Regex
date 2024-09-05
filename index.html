@@ -117,7 +117,7 @@ function getObjectFitSize(
       var y_init = 20;//50
       var r = 15;
       let animationstack = [];
-      let dur = 100;
+      let animation_duration = 75;
       let radius = 18;
 
       var greatest_x = x_init;//50
@@ -170,8 +170,8 @@ function getObjectFitSize(
       regextree.drawtree();
       result = evaluatestring(stringpattern, regextree);
       animation_length = animationstack.length;
-      const myinterval = setInterval(playvisualizations, animation_length*animation_play_scale);
-      setTimeout(function( ) { clearInterval( myinterval ); }, animation_length*animations_timeout_scale);
+      const myinterval = setInterval(playvisualizations, animation_duration);
+      //setTimeout(function( ) { clearInterval( myinterval ); }, animation_length*animation_duration);
     });
 
 
@@ -395,11 +395,11 @@ var Node = function(x,y,r, ctx, data) {
   {
     var cur = 0;
     var start = new Date().getTime(),
-    end = start + dur;
+    end = start + animation_duration;
     (function draw()
     {
       var now = new Date().getTime(),
-      next = 2 * Math.PI * (now-start)/dur;
+      next = 2 * Math.PI * (now-start)/animation_duration;
 
       ctx.beginPath();
       ctx.strokeStyle = thisanimationobject.stroke_style;
