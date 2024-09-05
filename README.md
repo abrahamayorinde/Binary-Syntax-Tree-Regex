@@ -91,6 +91,6 @@ Truth tables for each node type are listed below.
 | TRUE          | TRUE         |
 | FALSE         | FALSE        | 
 
-Starting at the root node and recursively calling the operation will evaluate the stringpattern against the regex. 
+Starting at the root node, recursively calling the function pointer operation will evaluate the stringpattern against the regex. 
 
 
