@@ -1,0 +1,42 @@
+      #interactive
+      {
+        height:65px;
+      }
+      #interactive >div
+      {
+        background-color: rgb(250, 250, 242);
+        display: flex;
+        /*flex-wrap: wrap;*/
+        font-family: Arial, sans-serif;
+        
+      }
+      #input1, #input2
+      {
+        border:1px solid black;
+      }
+      .row 
+      {
+        display: flex;
+        flex-direction: row;
+        /*flex-wrap: wrap;*/
+        width: auto;
+      }
+      .column 
+      {
+        display: flex;
+        flex-direction: column;
+        flex-basis: 100%;
+        flex: 1;
+      }
+      #instructions
+      {
+        font-size: .75em;
+        overflow:auto;
+      }
+      canvas 
+      {
+        width: 1920;
+        height: 1080px;
+        border: 1px solid red;
+        display: block;
+      }
